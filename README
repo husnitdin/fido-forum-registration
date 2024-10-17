@@ -1,0 +1,48 @@
+API Endpoints
+
+1. Register User
+
+Endpoint: /api/v1/register
+Method: POST
+
+Request Parameters:
+username: The username of the new user.
+password: The password for the new user.
+
+Response:
+success: new user added (if registration is successful)
+fail: user already exists (if the user already exists)
+
+Ex: http://localhost:8080/api/v1/register?username=vasya&password=12345
+
+2. Login User
+
+Endpoint: /api/v1/login
+Method: POST
+
+Request Parameters:
+username: The username of the user.
+password: The password of the user.
+
+Response:
+success: user logged in (if login is successful)
+fail: no such user (if the user does not exist)
+fail: incorrect password (if the password is incorrect)
+fail: already logged in (if the user is already logged in)
+
+Ex: http://localhost:8080/api/v1/login?username=vasya8&password=12345
+
+3. Logout User
+
+Endpoint: /api/v1/logout
+Method: POST
+
+Request Parameters:
+username: The username of the user.
+
+Response:
+success: user logged out (if logout is successful)
+fail: no such user (if the user does not exist)
+fail: already logged out (if the user is not logged in)
+
+Ex: http://localhost:8080/api/v1/logout?username=vasya&password=12345
