@@ -13,7 +13,7 @@ Response:
 success: new user added (if registration is successful)
 fail: user already exists (if the user already exists)
 
-Ex: http://localhost:8080/api/v1/register?username=vasya&password=12345
+Ex: POST http://localhost:8080/api/v1/register?username=vasya&password=12345
 
 2. Login User
 
@@ -30,7 +30,7 @@ fail: no such user (if the user does not exist)
 fail: incorrect password (if the password is incorrect)
 fail: already logged in (if the user is already logged in)
 
-Ex: http://localhost:8080/api/v1/login?username=vasya8&password=12345
+Ex: POST http://localhost:8080/api/v1/login?username=vasya8&password=12345
 
 3. Logout User
 
@@ -45,4 +45,4 @@ success: user logged out (if logout is successful)
 fail: no such user (if the user does not exist)
 fail: already logged out (if the user is not logged in)
 
-Ex: http://localhost:8080/api/v1/logout?username=vasya&password=12345
+Ex: POST http://localhost:8080/api/v1/logout?username=vasya&password=12345
